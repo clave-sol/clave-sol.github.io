@@ -1,0 +1,154 @@
+body{
+        background:#000;
+        font-family:Arial,sans-serif;
+        overflow-x:hidden;
+        color:white;
+        }
+
+        :root{
+        --rosa:#ff2d8d;
+        --rosa2:#ff77bc;
+        }
+
+        .navbar{
+        background:rgba(0,0,0,.9);
+        backdrop-filter:blur(10px);
+        }
+
+        .nav-link{
+        color:white !important;
+        font-weight:bold;
+        }
+
+        .hero{
+
+        height:100vh;
+        display:flex;
+        align-items:center;
+        position:relative;
+        background:
+        linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),
+        url('https://images.unsplash.com/photo-1501386761578-eac5c94b800');
+        background-size:cover;
+        background-position:center;
+        }
+
+        .hero h1{
+
+        font-size:70px;
+        font-weight:800;
+        color:var(--rosa);
+        text-shadow:0px 0px 20px var(--rosa);
+
+        }
+
+        .hero p{
+        font-size:22px;
+        }
+
+        .btn-clave{
+
+        background:linear-gradient(45deg,var(--rosa),var(--rosa2));
+        border:none;
+        padding:15px 35px;
+        font-weight:bold;
+        color:white;
+        border-radius:30px;
+        transition:.5s;
+        }
+
+        .btn-clave:hover{
+
+        transform:translateY(-5px);
+        box-shadow:0 0 25px var(--rosa);
+
+        }
+
+        .card-custom{
+
+        background:#111;
+        border:1px solid rgba(255,255,255,.1);
+        transition:.5s;
+        overflow:hidden;
+        border-radius:20px;
+        }
+
+        .card-custom:hover{
+
+        transform:translateY(-10px);
+        box-shadow:0 0 30px rgba(255,45,141,.5);
+
+        }
+
+        .card-custom img{
+
+        height:250px;
+        object-fit:cover;
+        }
+
+        .formulario{
+
+        background:linear-gradient(180deg,#111,#000);
+        padding:40px;
+        border-radius:30px;
+        box-shadow:0 0 30px rgba(255,45,141,.3);
+
+        }
+
+        input,textarea{
+
+        background:#222 !important;
+        border:none !important;
+        color:white !important;
+
+        }
+
+        footer{
+
+        background:#050505;
+        padding:40px;
+        }
+
+        .whatsapp{
+
+        position:fixed;
+        bottom:25px;
+        right:25px;
+        width:70px;
+        height:70px;
+        background:#25D366;
+        border-radius:50%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size:35px;
+        color:white;
+        z-index:999;
+        text-decoration:none;
+        animation:latido 1.5s infinite;
+
+        }
+
+        @keyframes latido{
+
+        0%{transform:scale(1)}
+        50%{transform:scale(1.1)}
+        100%{transform:scale(1)}
+
+        }
+
+        .particulas{
+
+        position:absolute;
+        width:100%;
+        height:100%;
+        z-index:0;
+
+        }
+
+        .contenido{
+        z-index:1;
+        }
+        h4, p{
+            color: #fff;
+        }
